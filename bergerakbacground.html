@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .spin {
+            width: 100px;
+            height: 100px;
+            background-color: #4caf50;
+            border-radius: 50%;
+            animation: spin 3s linear infinite; /* Animasi putar */
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg); /* Awal rotasi */
+            }
+            100% {
+                transform: rotate(360deg); /* Akhir rotasi */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spin"></div>
+</body>
+</html>

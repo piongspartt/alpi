@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .color-change-box {
+            width: 100%;
+            height: 100vh;
+            background-color: #ff5722;
+            animation: colorChange 4s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #f8f5f4;
+            }
+            50% {
+                background-color: #356c37;
+            }
+            100% {
+                background-color: #01060b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="color-change-box"></div>
+</body>
+</html>

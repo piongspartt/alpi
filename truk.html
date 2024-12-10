@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB; /* Latar belakang langit biru */
+        }
+
+        .truck {
+            width: 150px;
+            height: 80px;
+            background-color: #FF5733;
+            position: absolute;
+            bottom: 50px; /* Menempatkan truk di bagian bawah */
+            border-radius: 10px;
+            animation: drive 5s linear infinite; /* Animasi bergerak */
+        }
+
+        .truck:before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            bottom: -20px; /* Posisi roda kiri */
+        }
+
+        .truck:after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            bottom: -20px; /* Posisi roda kanan */
+        }
+
+        /* Animasi untuk truk bergerak dari kiri ke kanan */
+        @keyframes drive {
+            0% {
+                left: -150px; /* Mulai di luar layar sebelah kiri */
+            }
+            100% {
+                left: 100%; /* Bergerak keluar dari layar sebelah kanan */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="truck"></div>
+</body>
+</html>

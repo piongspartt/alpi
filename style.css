@@ -1,0 +1,90 @@
+body{
+    font-family: 'roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, black, white);
+}
+header{
+    height: 20vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, black, white);
+}
+.logo{
+    display: flex;
+    margin-left: 20px;
+}
+.logo-1{
+    color: crimson;
+    text-shadow: 1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;
+}
+.logo-2{
+    text-shadow: 1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;
+    color: blue;
+}
+
+nav ul{
+    display: flex;
+    gap: 5em;
+    padding: 20px;
+}
+nav ul :hover{
+    background: red;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-shadow: 0 0 5px rgb(10, 237, 237), 0 0 10px rgba(228, 210, 210, 0.8);
+    text-decoration: none;
+    color: white;
+}
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background: url('Desain tanpa judul (3).png');
+    background-size: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: aliceblue; 
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgb(3, 56, 56), 0 0 10px rgba(24, 24, 24, 0.8);
+}
+main ul{
+    margin-top: 100px;
+}
+main ul li{
+    list-style: none;
+    padding: 5px;
+}
+.l1{
+    font-size: 25px;
+}
+.l2{
+    font-size: 30px;
+}
+.l3{
+    font-size: 15px;
+}
+.main-about{
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgb(3, 56, 56), 0 0 10px rgba(24, 24, 24, 0.8);
+}
+.h1-about{
+    color: white;
+}
+footer{
+    height: 5vh;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(3, 56, 56), 0 0 10px rgba(24, 24, 24, 0.8);
+}
